@@ -102,7 +102,9 @@ body {
 
 
 
-.food-card {
+.food-card,
+.drink-card,
+.dessert-card {
     background-color: #FFFFFF;
     width: 172px;
     height: 226px;
