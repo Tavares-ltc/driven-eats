@@ -107,8 +107,10 @@ body {
     width: 172px;
     height: 226px;
     border-radius: 5px;
-    padding: 20px 13px;
-    margin-left: 10px;
+    padding: 10px 5px;
+    /* margin-left: 10px; */
+    box-sizing: border-box;
+    border: thick solid transparent;
 }
 
 body img {
@@ -127,10 +129,7 @@ body img {
     margin-bottom: 27px;
     width: 414px;
     overflow-x: auto;
-}
-
-.dishes-container::-webkit-scrollbar {
-    width: 0;
+    gap: 10px;
 }
 
 #primeiro {

@@ -13,50 +13,49 @@
         @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
     </style>
 </head>
-<html>
 
 <body>
 
     <div class="page">
         <div class="header">
             <h1>DrivenEats</h1>
-            <h1>Sua comida em minutos</h1>
+            <h1>Sua comida em 6 minutos</h1>
         </div>
         <h2 id="primeiro"> Primeiro, seu prato</h2>
         <div class="dishes-container">
-            <div class="food-card">
-                <img src="img/frango.png" alt="Frango Yng Yang">
+            <div id="macarrao" onClick="pedido(id, 14.90)" class="food-card">
+                <img src="img/macarrao.jpg" alt="Macarrão a puntanesca">
                 <div class="description">
-                    <h3>Frango Ying Yang</h3>
-                    <p>Um pouco de batata</p>
-                    <p>um pouco de salada</p>
+                    <h3>Macarrão</h3>
+                    <p>Macarrao parafuso</p>
+                    <p>Porção de salada</p>
                 </div>
                 <h4>R$14,90</h4>
             </div>
-            <div class="food-card">
-                <img src="img/frango.png" alt="Frango Yng Yang">
+            <div id="poke" onClick="pedido(id, 14.90)" class="food-card">
+                <img src="img/poke.webp" alt="Poke de frutos do mar">
                 <div class="description">
-                    <h3>Frango Ying Yang</h3>
-                    <p>Um pouco de batata</p>
-                    <p>um pouco de salada</p>
+                    <h3>Poke</h3>
+                    <p>Arroz gohan</p>
+                    <p>Frutos do mar</p>
                 </div>
                 <h4>R$14,90</h4>
             </div>
-            <div class="food-card">
+            <div id="Frango" onClick="pedido(id, 14.90)" class="food-card">
                 <img src="img/frango.png" alt="Frango Yng Yang">
                 <div class="description">
                     <h3>Frango Ying Yang</h3>
-                    <p>Um pouco de batata</p>
-                    <p>um pouco de salada</p>
+                    <p>Porção de batata</p>
+                    <p>Porção de salada</p>
                 </div>
                 <h4>R$14,90</h4>
             </div>
-            <div class="food-card">
-                <img src="img/frango.png" alt="Frango Yng Yang">
+            <div id="strogonoff" onClick="pedido(id, 14.90)" class="food-card">
+                <img src="img/strogonoff.webp" alt="Strogonoff de frango">
                 <div class="description">
-                    <h3>Frango Ying Yang</h3>
-                    <p>Um pouco de batata</p>
-                    <p>um pouco de salada</p>
+                    <h3>Strogonoff</h3>
+                    <p>Strogonoff de frango</p>
+                    <p>Porção de bata palha</p>
                 </div>
                 <h4>R$14,90</h4>
             </div>
@@ -133,11 +132,13 @@
                 </div>
                 <h4>R$14,90</h4>
             </div>
+
         </div>
         <div class="bottom">
-            <button value="Confirmar">Selecionar os 3 itens para fechar o pedido</button>
+            <button value="Confirmar" onclick="teste ()">Selecionar os 3 itens para fechar o pedido</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
