@@ -15,7 +15,7 @@
 
 .confirmation {
     width: 414px;
-    height: 1000px;
+    height: 100%;
     background: rgba(255, 255, 255, 0.9);
     display: flex;
     justify-content: center;
@@ -23,8 +23,21 @@
     position: fixed;
     top: 0;
     visibility: hidden;
-    /* display: none; too entendendo n */
+    z-index: 1;
 
+}
+
+.payment-voucher1,
+.payment-voucher2,
+.payment-voucher3,
+.soma {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.soma {
+    margin-top: 20px;
 }
 
 .modal {
@@ -32,8 +45,50 @@
     height: 353px;
     background-color: #50D074;
     border-radius: 20px;
+    padding: 10px;
 }
 
+#tudo-certo {
+    display: inline-block;
+
+
+    box-sizing: border-box;
+    width: 329px;
+    height: 52px;
+    background-color: #FFFFFF;
+    padding: 2px 10px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    box-shadow: none;
+    border: 1px solid #CBCBCB;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #50D074;
+}
+
+.modal p {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.modal div:last-of-type {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.modal div:first-of-type {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
 .bottom {
     background-color: #FFFFFF;
@@ -99,6 +154,7 @@ body {
 
 * h5 {
     font-size: 22px;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
 }
@@ -145,11 +201,7 @@ body {
     z-index: 1;
 }
 
-.modal:first-child {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-}
+
 
 
 .food-card,

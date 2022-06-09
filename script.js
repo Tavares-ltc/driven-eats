@@ -34,6 +34,7 @@ function drink(id, valor) {
     let cards = '';
     let checks = '';
     valor2 = valor;
+    drinkChosed = id
     cards = document.querySelectorAll(".drink-card");
 
     for (let i = 0; i < cards.length; i++) {
@@ -88,9 +89,24 @@ function calcular() {
     if ((valor1 > 0) && (valor2 > 0) && (valor3 > 0)) {
         // alert('teste')
         document.querySelector('.confirmation').style.visibility = "visible";
+        
+        // document.querySelector('.payment-voucher1') = ''
+        // document.querySelector('.payment-voucher2') = ''
+        // document.querySelector('.payment-voucher3') = ''
+        // document.querySelector('.soma') = ''
 
+        let res1 = document.querySelector('.payment-voucher1')
+        res1.innerHTML = `<h5> ${dishChosed}</h5> <h5>  R$${valor1} </h5>`
+        let res2 = document.querySelector('.payment-voucher2')
+        res2.innerHTML = `<h5> ${drinkChosed}</h5> <h5> R$${valor2} </h5>`
+        let res3 = document.querySelector('.payment-voucher3')
+        res3.innerHTML = `<h5> ${dessertChosed}</h5> <h5> R$${valor3} </h5>`
+        let soma = document.querySelector('.soma')
+        soma.innerHTML = `<h5> <strong>TOTAL</strong></h5> <h5> R$${valor1 + valor2 + valor3} </h5>`
     }
-    else (
-        alert('puts')
-    )
+}
+function cancelar() {
+    document.querySelector('.confirmation').style.visibility = "hidden";
+    re1.innerHTML = ''
+
 }
