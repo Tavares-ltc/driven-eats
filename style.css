@@ -42,6 +42,22 @@
     color: #FFFFFF;
 }
 
+#check {
+    width: 15px;
+    height: 15px;
+    visibility: hidden;
+
+
+}
+
+
+
+
+.preco {
+    display: flex;
+    justify-content: space-between;
+}
+
 html,
 body {
     background-color: #E5E5E5;
