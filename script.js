@@ -3,7 +3,7 @@ let valor1 = 0
 let drinkChosed = ''
 let valor2 = 0
 let dessertChosed = ''
-let valor4 = 0
+let valor3 = 0
 
 function dish(id, valor) {
     let cards = '';
@@ -16,6 +16,11 @@ function dish(id, valor) {
     }
     document.querySelector('#' + id).style.border = "thick solid #32B72F";
 
+    if ((valor1 > 0) && (valor2 > 0) && (valor3 > 0)) {
+        document.querySelector("#button").style.backgroundColor = "#32B72F"
+        document.querySelector("#button").innerHTML = "Fechar pedido"
+    }
+
 }
 function drink(id, valor) {
     let cards = '';
@@ -26,6 +31,11 @@ function drink(id, valor) {
         cards[i].style.border = "thick solid transparent";
     }
     document.querySelector('#' + id).style.border = "thick solid #32B72F";
+
+    if ((valor1 > 0) && (valor2 > 0) && (valor3 > 0)) {
+        document.querySelector("#button").style.backgroundColor = "#32B72F"
+        document.querySelector("#button").innerHTML = "Fechar pedido"
+    }
 
 }
 function dessert(id, valor) {
@@ -39,6 +49,17 @@ function dessert(id, valor) {
     }
     document.querySelector('#' + id).style.border = "thick solid #32B72F";
 
+
+    if ((valor1 > 0) && (valor2 > 0) && (valor3 > 0)) {
+        document.querySelector("#button").style.backgroundColor = "#32B72F"
+        document.querySelector("#button").innerHTML = "Fechar pedido"
+    }
+
 }
 
+function calcular() {
 
+    if ((valor1 > 0) && (valor2 > 0) && (valor3 > 0)) {
+
+    }
+}

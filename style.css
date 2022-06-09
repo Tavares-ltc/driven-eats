@@ -24,7 +24,7 @@
     bottom: 0;
 }
 
-.page button {
+#button {
     display: inline-block;
 
 
@@ -90,7 +90,6 @@ body {
     width: 414px;
     padding: 20px 20px;
     position: fixed;
-    /*   */
     top: 0;
     background-color: #CF2B2B;
     font-size: 44px;
