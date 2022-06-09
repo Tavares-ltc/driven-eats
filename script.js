@@ -1,3 +1,5 @@
+let nome = ''
+let endereco = ''
 let dishChosed = ''
 let valor1 = 0
 let drinkChosed = ''
@@ -89,7 +91,7 @@ function calcular() {
     if ((valor1 > 0) && (valor2 > 0) && (valor3 > 0)) {
         // alert('teste')
         document.querySelector('.confirmation').style.visibility = "visible";
-        
+
         // document.querySelector('.payment-voucher1') = ''
         // document.querySelector('.payment-voucher2') = ''
         // document.querySelector('.payment-voucher3') = ''
@@ -108,5 +110,23 @@ function calcular() {
 function cancelar() {
     document.querySelector('.confirmation').style.visibility = "hidden";
     re1.innerHTML = ''
+}
+function finalizar() {
+    nome = prompt('Digite seu nome:')
+    endereco = prompt('Digite seu enderenço:')
+
+    let mensagem = encodeURIComponent(`
+Olá, gostaria de fazer o pedido:
+- Prato: ${dishChosed}
+- Bebida: ${drinkChosed}
+- Sobremesa: ${dessertChosed}
+Total: R$ 27.70
+    
+Nome: ${nome}
+Endereço: ${endereco}`)
+
+    let url = ('https://wa.me/5521965256564?text=' + mensagem)
+
+    window.open(url)
 
 }
