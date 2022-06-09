@@ -10,7 +10,30 @@
     padding-bottom: 92px;
     /* overflow-x: hidden; */
     margin: auto auto;
+    position: relative;
 }
+
+.confirmation {
+    width: 414px;
+    height: 1000px;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    /* display: none; too entendendo n */
+
+}
+
+.modal {
+    width: 377px;
+    height: 353px;
+    background-color: #50D074;
+    border-radius: 20px;
+}
+
 
 .bottom {
     background-color: #FFFFFF;
@@ -74,6 +97,12 @@ body {
 
 }
 
+* h5 {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+
 * p {
     font-size: 15px;
     line-height: 19px;
@@ -113,8 +142,14 @@ body {
     font-family: 'Righteous', cursive;
     color: #FFFFFF;
     box-shadow: 0 2px 10px rgb(82, 82, 82);
+    z-index: 1;
 }
 
+.modal:first-child {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
 
 
 .food-card,

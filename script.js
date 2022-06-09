@@ -86,6 +86,11 @@ function dessert(id, valor) {
 function calcular() {
 
     if ((valor1 > 0) && (valor2 > 0) && (valor3 > 0)) {
+        // alert('teste')
+        document.querySelector('.confirmation').style.visibility = "visible";
 
     }
+    else (
+        alert('puts')
+    )
 }
