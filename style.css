@@ -8,7 +8,6 @@
     width: 414px;
     height: auto;
     padding-bottom: 92px;
-    /* overflow-x: hidden; */
     margin: auto auto;
     position: relative;
 }
@@ -46,7 +45,7 @@
     background-color: #50D074;
     border-radius: 20px;
     padding: 10px;
-    
+
 }
 
 #tudo-certo {
@@ -216,6 +215,7 @@ body {
     /* margin-left: 10px; */
     box-sizing: border-box;
     border: thick solid transparent;
+    box-shadow: 0px 0px 10px -4px #00000040;
 }
 
 body img {
@@ -237,6 +237,8 @@ body img {
     gap: 10px;
 }
 
+
+
 #primeiro {
     margin-top: 129px;
 }
@@ -245,4 +247,29 @@ body img {
 .header h1:last-of-type {
     font-size: 18px;
     margin-top: 0;
+}
+
+
+@media screen and (max-width: 610px) {
+
+    .page,
+    .header,
+    .bottom,
+    .dishes-container,
+    .drink-container,
+    .dessert-container {
+        width: 100%;
+
+    }
+
+    .dishes-container::-webkit-scrollbar,
+.drink-container::-webkit-scrollbar,
+.dessert-container::-webkit-scrollbar {
+    display: none;
+}
+.dishes-container,
+.drink-container,
+.dessert-container {
+    scrollbar-width: none;
+}
 }

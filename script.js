@@ -1,12 +1,12 @@
-let nome, endereco, dishChosed, valor1, drinkChosed, valor2, dessertChosed, valor3, somaPreco
+let nome, endereco, dishChosed, valor1, drinkChosed, valor2, dessertChosed, valor3, somaValor, somaPreco
 
 
 function dish(id) {
     let cards = '';
     let checks = '';
     let text = document.querySelector(`#${id} h4`).innerText
-    let text2 = text.substr(2, 7)
-    valor1 = parseFloat(text2.replace(",", "."))
+    text = text.substr(2, 7)
+    valor1 = Number(text.replace(",", "."))
 
 
     dishChosed = id;
@@ -38,8 +38,8 @@ function drink(id) {
 
 
     let text = document.querySelector(`#${id} h4`).innerText
-    let text2 = text.substr(2, 7)
-    valor2 = parseFloat(text2.replace(",", "."))
+    text = text.substr(2, 7)
+    valor2 = Number(text.replace(",", "."))
 
 
     for (let i = 0; i < cards.length; i++) {
@@ -68,8 +68,10 @@ function dessert(id) {
     cards = document.querySelectorAll(".dessert-card");
 
     let text = document.querySelector(`#${id} h4`).innerText
-    let text2 = text.substr(2, 7)
-    valor3 = parseFloat(text2.replace(",", "."))
+    text = text.substr(2, 7)
+    text = text.replace(",", ".")
+    valor3 = Number(text)
+
 
     for (let i = 0; i < cards.length; i++) {
         cards[i].style.border = "thick solid transparent";
@@ -97,15 +99,22 @@ function calcular() {
     if ((valor1 > 0) && (valor2 > 0) && (valor3 > 0)) {
         // alert('teste')
         document.querySelector('.confirmation').style.visibility = "visible";
+        somaValor = valor1 + valor2 + valor3
 
-        // document.querySelector('.payment-voucher1') = ''
-        // document.querySelector('.payment-voucher2') = ''
-        // document.querySelector('.payment-voucher3') = ''
-        // document.querySelector('.soma') = ''
-        let preco1 = String(valor1).replace('.', ',')
-        let preco2 = String(valor2).replace('.', ',')
-        let preco3 = String(valor3).replace('.', ',')
-        somaPreco = String(valor1 + valor2 + valor3).replace('.', ',')
+        let preco1 = valor1.toFixed(2)
+        preco1 = preco1.replace('.', ',')
+        console.log(valor1)
+        console.log(typeof (valor1))
+
+        let preco2 = valor2.toFixed(2)
+        preco2 = preco2.replace('.', ',')
+
+        let preco3 = valor3.toFixed(2)
+        preco3 = preco3.replace('.', ',')
+
+        somaPreco = somaValor.toFixed(2)
+        somaPreco = somaPreco.replace('.', ',')
+
 
         let res1 = document.querySelector('.payment-voucher1')
         res1.innerHTML = `<h5> ${dishChosed}</h5> <h5>  R$${preco1} </h5>`
@@ -113,6 +122,8 @@ function calcular() {
         res2.innerHTML = `<h5> ${drinkChosed}</h5> <h5> R$${preco2} </h5>`
         let res3 = document.querySelector('.payment-voucher3')
         res3.innerHTML = `<h5> ${dessertChosed}</h5> <h5> R$${preco3} </h5>`
+        console.log(somaPreco)
+        console.log(typeof (somaPreco))
 
         let soma = document.querySelector('.soma')
         soma.innerHTML = `<h5> <strong>TOTAL</strong></h5> <h5> R$${somaPreco} </h5>`
@@ -141,4 +152,15 @@ Endereço: ${endereco}`)
 
     window.open(url)
 
+}
+
+
+
+window.onload = function aviso() {
+    
+    let largura = window.screen.width;
+    
+    if (largura > 700) {
+    alert('O presente site foi pensado para o layout mobile. Por isso, para que a navegação funcione como o pensado, abra-o em um celular ou no modo responsividade do inspecioanar em uma largura próxima a 414px.')
+    }
 }
