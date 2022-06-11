@@ -38,19 +38,19 @@
         </div>
         <h2 id="primeiro"> Primeiro, seu prato</h2>
         <div class="dishes-container">
-            <div id="Macarrao" onClick="dish(id)" class="food-card">
+            <div id="Macarrao" onClick="dish(id,'.food-card')" class="food-card">
                 <img src="img/macarrao.jpg" alt="Macarrão a puntanesca">
                 <div class="description">
                     <h3>Macarrão</h3>
-                    <p>Macarrao parafuso</p>
+                    <p>Macarrao farfallone</p>
                     <p>Porção de salada</p>
                 </div>
                 <div class="preco">
                     <h4>R$22,90</h4>
-                    <img id="check" src="img/checkmark.svg" alt="checkmark">
+                    <img class="check" src="img/checkmark.svg" alt="checkmark">
                 </div>
             </div>
-            <div id="Poke" onClick="dish(id)" class="food-card">
+            <div id="Poke" onClick="dish(id,'.food-card')" class="food-card">
                 <img src="img/poke.webp" alt="Poke de frutos do mar">
                 <div class="description">
                     <h3>Poke</h3>
@@ -59,10 +59,10 @@
                 </div>
                 <div class="preco">
                     <h4>R$28,50</h4>
-                    <img id="check" src="img/checkmark.svg" alt="checkmark">
+                    <img class="check" src="img/checkmark.svg" alt="checkmark">
                 </div>
             </div>
-            <div id="Frango" onClick="dish(id)" class="food-card">
+            <div id="Frango" onClick="dish(id, '.food-card')" class="food-card">
                 <img src="img/frango.png" alt="Frango Yng Yang">
                 <div class="description">
                     <h3>Frango Ying Yang</h3>
@@ -71,10 +71,10 @@
                 </div>
                 <div class="preco">
                     <h4>R$18,30</h4>
-                    <img id="check" src="img/checkmark.svg" alt="checkmark">
+                    <img class="check" src="img/checkmark.svg" alt="checkmark">
                 </div>
             </div>
-            <div id="Strogonoff" onClick="dish(id)" class="food-card">
+            <div id="Strogonoff" onClick="dish(id,'.food-card')" class="food-card">
                 <img src="img/strogonoff.webp" alt="Strogonoff de frango">
                 <div class="description">
                     <h3>Strogonoff</h3>
@@ -83,13 +83,13 @@
                 </div>
                 <div class="preco">
                     <h4>R$20,90</h4>
-                    <img id="check" src="img/checkmark.svg" alt="checkmark">
+                    <img class="check" src="img/checkmark.svg" alt="checkmark">
                 </div>
             </div>
         </div>
         <h2>Agora, sua bebida</h2>
         <div class="drink-container">
-            <div id="Coca" onClick="drink(id)" class="drink-card">
+            <div id="Coca" onClick="drink(id, '.drink-card')" class="drink-card">
                 <img src="img/coca-cola.jpg" alt="Coquinha gelada">
                 <div class="description">
                     <h3>Coca Cola</h3>
@@ -98,11 +98,11 @@
                 <div>
                     <div class="preco">
                         <h4>R$6,90</h4>
-                        <img id="check" src="img/checkmark.svg" alt="checkmark">
+                        <img class="check" src="img/checkmark.svg" alt="checkmark">
                     </div>
                 </div>
             </div>
-            <div id="Pepsi" onClick="drink(id)" class="drink-card">
+            <div id="Pepsi" onClick="drink(id, '.drink-card')" class="drink-card">
                 <img src="img/pepsi.jpg" alt="Pepsi Cola">
                 <div class="description">
                     <h3>Pepsi</h3>
@@ -110,10 +110,10 @@
                 </div>
                 <div class="preco">
                     <h4>R$7,00</h4>
-                    <img id="check" src="img/checkmark.svg" alt="checkmark">
+                    <img class="check" src="img/checkmark.svg" alt="checkmark">
                 </div>
             </div>
-            <div id="Fanta" onClick="drink(id)" class="drink-card">
+            <div id="Fanta" onClick="drink(id, '.drink-card')" class="drink-card">
                 <img src="img/Fanta.jpg" alt="Fanta Laranja">
                 <div class="description">
                     <h3>Fanta Laranja</h3>
@@ -121,10 +121,10 @@
                 </div>
                 <div class="preco">
                     <h4>R$6,50</h4>
-                    <img id="check" src="img/checkmark.svg" alt="checkmark">
+                    <img class="check" src="img/checkmark.svg" alt="checkmark">
                 </div>
             </div>
-            <div id="Guarana" onClick="drink(id)" class="drink-card">
+            <div id="Guarana" onClick="drink(id, '.drink-card')" class="drink-card">
                 <img src="img/guarana.webp" alt="Guaraná">
                 <div class="description">
                     <h3>Guaraná</h3>
@@ -132,13 +132,13 @@
                 </div>
                 <div class="preco">
                     <h4>R$5,50</h4>
-                    <img id="check" src="img/checkmark.svg" alt="checkmark">
+                    <img class="check" src="img/checkmark.svg" alt="checkmark">
                 </div>
             </div>
         </div>
         <h2>Por fim, sua sobremesa</h2>
         <div class="dessert-container">
-            <div id="Pudim" onClick="dessert(id)" class="dessert-card">
+            <div id="Pudim" onClick="dessert(id,'.dessert-card')" class="dessert-card">
                 <img src="img/pudim.jpg" alt="Pudim">
                 <div class="description">
                     <h3>Pudim</h3>
@@ -146,10 +146,10 @@
                 </div>
                 <div class="preco">
                     <h4>R$7,90</h4>
-                    <img id="check" src="img/checkmark.svg" alt="checkmark">
+                    <img class="check" src="img/checkmark.svg" alt="checkmark">
                 </div>
             </div>
-            <div id="Brownie" onClick="dessert(id)" class="dessert-card">
+            <div id="Brownie" onClick="dessert(id,'.dessert-card')" class="dessert-card">
                 <img src="img/brownie.jpeg" alt="Brownie">
                 <div class="description">
                     <h3>Brownie</h3>
@@ -157,10 +157,10 @@
                 </div>
                 <div class="preco">
                     <h4>R$4,90</h4>
-                    <img id="check" src="img/checkmark.svg" alt="checkmark">
+                    <img class="check" src="img/checkmark.svg" alt="checkmark">
                 </div>
             </div>
-            <div id="Palha" onClick="dessert(id)" class="dessert-card">
+            <div id="Palha" onClick="dessert(id,'.dessert-card')" class="dessert-card">
                 <img src="img/palha.jpeg" alt="Palha Italiana">
                 <div class="description">
                     <h3>Palha Italiana</h3>
@@ -168,10 +168,10 @@
                 </div>
                 <div class="preco">
                     <h4>R$3,50</h4>
-                    <img id="check" src="img/checkmark.svg" alt="checkmark">
+                    <img class="check" src="img/checkmark.svg" alt="checkmark">
                 </div>
             </div>
-            <div id="Mousse" onClick="dessert(id)" class="dessert-card">
+            <div id="Mousse" onClick="dessert(id,'.dessert-card')" class="dessert-card">
                 <img src="img/mousse.jpg" alt="Mousse de Maracujá">
                 <div class="description">
                     <h3>Mousse</h3>
@@ -180,7 +180,7 @@
                 </div>
                 <div class="preco">
                     <h4>R$6,10</h4>
-                    <img id="check" src="img/checkmark.svg" alt="checkmark">
+                    <img class="check" src="img/checkmark.svg" alt="checkmark">
                 </div>
             </div>
 
@@ -191,8 +191,6 @@
         </div>
 
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
 

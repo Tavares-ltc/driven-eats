@@ -1,0 +1,4 @@
+Projeto da terceira semana do bootcamp Driven
+
+
+O projeto foi sensacional. Pude sentir a diferença no tempo em que o layout ficou pronto em comparação com os anteriores e foi interessante, finalmente unir o que tinhamos aprendido de CSS e HTML com javascript. Tive algumas dificuldades pontuais no javascript, o que exigiu uma pesquisa por fora, mas isso porque terminei o projeto antes do final da semana. Com isso, pude ver no conteudo que foi dado nos dois ultimos dias, soluções para problemas que acabariam levando menos linhas de codigo. Usei o codigo então para praticar as novas soluções aprendidas e tambem para implementar funções alem do sugerido. Acho que o importante agora, é que meu leque de opçoes para se trabalhar o mesmo problema aumentou. Que venha o próximo desafio!

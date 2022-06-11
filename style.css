@@ -120,7 +120,7 @@
     color: #FFFFFF;
 }
 
-#check {
+.check {
     width: 15px;
     height: 15px;
     visibility: hidden;
@@ -250,6 +250,7 @@ body img {
 }
 
 
+
 @media screen and (max-width: 610px) {
 
     .page,
@@ -263,13 +264,14 @@ body img {
     }
 
     .dishes-container::-webkit-scrollbar,
-.drink-container::-webkit-scrollbar,
-.dessert-container::-webkit-scrollbar {
-    display: none;
-}
-.dishes-container,
-.drink-container,
-.dessert-container {
-    scrollbar-width: none;
-}
+    .drink-container::-webkit-scrollbar,
+    .dessert-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .dishes-container,
+    .drink-container,
+    .dessert-container {
+        scrollbar-width: none;
+    }
 }
